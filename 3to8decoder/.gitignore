@@ -72,5 +72,6 @@ _ngo/
 *.ngr
 *.lso
 *.cmd_log
-*.bld*.v~
+*.bld
+*.v~
 *.un~
