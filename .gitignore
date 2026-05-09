@@ -75,3 +75,36 @@ work/
 isim/
 xst/
 _xmsgs/
+# Coverage / HTML reports
+covhtmlreport/
+*.htm
+*.html
+*.css
+*.js
+*.png
+
+# ModelSim / Questa
+transcript
+*.wlf
+work/
+fifo_fun_cov/
+fsm_cov/
+
+# Xilinx / generated
+*.xst
+*.xpi
+*.twr
+*.xrpt
+*.csv
+*.txt
+*.pad
+*.map
+*.mrp
+*.ngc
+*.ngr
+*.ngd
+*.xml
+*.log
+*.exe
+*.cmd
+*.ini
