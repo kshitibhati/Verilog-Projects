@@ -1,0 +1,17 @@
+# vsim -coverage -do {coverage save -onexit -directive -cvg -codeall fifo_fun_cov; run -all;exit} -c -vopt vending_machine_tb 
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.vending_machine_tb(fast)
+# Loading work.vending_machine(fast)
+# coverage save -onexit -directive -cvg -codeall fifo_fun_cov 
+#  run -all 
+# ** Note: $finish    : ../TB/fsm_tb.v(37)
+#    Time: 110 ns  Iteration: 1  Instance: /vending_machine_tb

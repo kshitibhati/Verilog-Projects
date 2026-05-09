@@ -1,0 +1,31 @@
+module timer (load,rst,clk,data,counter,temp,timeout);
+
+input load, clk,rst;
+input [3:0] data;
+output timeout;
+
+output reg [2:0] counter;
+output reg [3:0] temp;
+
+always @ (posedge clk)
+begin
+if (rst)
+counter <= 0;
+else if (counter == 3'd4)
+counter <= 0;
+else
+counter <= counter+1;
+end   
+
+always@(posedge clk)
+ if (rst)
+   temp <= 0;
+ else if (load)
+   temp <= data;
+ else if(counter == 3'd4 && temp != 0)
+   temp <= temp - 1'b1;
+
+assign timeout = (temp == 0) ? 1'b1 : 1'b0;
+
+endmodule
+ 

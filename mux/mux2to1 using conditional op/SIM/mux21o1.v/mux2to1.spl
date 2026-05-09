@@ -1,0 +1,9 @@
+[Inputs]
+a
+sel
+[Outputs]
+f
+[BiDir]
+[ATTRIBUTES]
+VeriModel mux2to1
+

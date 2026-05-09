@@ -1,0 +1,2 @@
+verilog work "../../../../D ff/RTL/dff_rtl.v"
+verilog work "../../RTL/dto_jk.v"

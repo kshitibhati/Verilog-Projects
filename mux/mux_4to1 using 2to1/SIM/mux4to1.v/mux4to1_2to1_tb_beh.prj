@@ -1,0 +1,4 @@
+verilog work "../../../mux_2to1/RTL/mux_2to1_rtl2.v"
+verilog work "../../RTL/mux4to1_2to1.v"
+verilog work "../../TB/mux4to1.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

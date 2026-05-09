@@ -1,0 +1,21 @@
+module jkff_tb();
+reg j,k,clk;
+wire q;
+jkff xiti (.j(j),.k(k),.clk(clk),.q(q));
+
+initial
+begin
+clk=0;
+forever
+#10 clk=!clk;
+end
+
+initial
+begin
+j=1'b0; k=1'b0; #10;
+j=1'b0; k=1'b1; #10;
+j=1'b1; k=1'b0; #10;
+j=1'b1; k=1'b1; #10;
+$finish
+end
+endmodule 

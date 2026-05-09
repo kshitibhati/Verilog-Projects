@@ -1,0 +1,62 @@
+//RAM 16x8
+`define ADDR_WIDTH 2
+`define DEPTH 4
+`define DATA_WIDTH 8 
+module ram (clk,
+            rst,
+            wr_enb,
+            wr_sel,
+            wr_data,
+            rd_enb,
+            rd_sel,
+            rd_data);
+
+//port direction
+  input clk, rst;
+
+ //write signals
+  input                   wr_enb;
+  input [`ADDR_WIDTH-1:0] wr_sel;
+  input [`DATA_WIDTH-1:0] a,b,c,d;
+
+ //read signals
+  input                        rd_enb;
+  input      [`ADDR_WIDTH-1:0] rd_sel;
+  output reg [`DATA_WIDTH-1:0] e,f,g,h;
+
+
+ //internal memory
+ reg [`DATA_WIDTH-1:0] ram [0:`DEPTH-1];
+
+ reg [`ADDR_WIDTH:0] i;
+
+ //implementation
+ always@(posedge clk)
+  if (rst) begin
+     rd_data <= `DATA_WIDTH'd0;
+	 //memory initialisation
+     for (i=0;i<`DEPTH;i=i+1) 
+         ram[i] <= `DATA_WIDTH'd0;
+  end
+  else begin
+    //write logic
+     always @ (*) begin
+   case (wr_sel)
+       2'b00: ram[wr_sel] <= a;
+       2'b01: ram[wr_sel] <= b;
+       2'b10: ram[wr_sel] <= c;
+       2'b11: ram[wr_sel] <= d;
+endcase
+end
+    //read logic
+    always @(*)begin
+     if (rd_enb)
+       2'b00: e <= ram[rd_addr];
+       2'b01: f <= ram[rd_addr];
+       2'b10: g <= ram[rd_addr];
+       2'b11: h <= ram[rd_addr];
+endcase
+end
+  end
+  
+endmodule

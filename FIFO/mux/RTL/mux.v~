@@ -1,0 +1,33 @@
+
+
+module mux (e,f,g,h ,rd_sel,rd_data,x,rd_enb,reset,clk);
+input [3:0]e,f,g,h;
+input reset,rd_enb,clk;
+output reg rd_data;
+input [1:0] rd_sel ;
+output reg [1:0] x;
+
+/*always@(posedge clk)
+begin
+if (reset == 1 && rd_enb==0)
+   x = 2'b00;
+else 
+   x = x + 1;
+ end*/
+
+always @(rd_sel or e or f or g or h)
+    begin
+        case (rd_sel)  
+         
+            2'b00 :rd_data = e;
+                       
+            2'b01 :rd_data = f;
+                       
+            2'b10 :rd_data = g;
+                        
+            2'b11 :rd_data = h;
+        endcase
+     end
+
+assign rd_sel = x;
+endmodule

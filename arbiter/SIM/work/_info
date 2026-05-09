@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Verilog\arbiter\SIM
+T_opt
+V=T?a`:KdXS4`B<DODkS[W1
+Z1 04 10 4 work arbiter_tb fast 0
+Z2 =1-c85b76dab691-5d8d9346-e6-117c
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt
+Z5 OE;O;10.0b;49
+Z6 dD:\Verilog\arbiter\SIM
+varbiter
+Z7 Ig;7<9BS<mON^gUBmzn3Lg2
+Z8 V<eozbQEChbz4i[zQLa4J]1
+R6
+Z9 w1569558620
+Z10 8..\RTL\arbiter.v
+Z11 F..\RTL\arbiter.v
+L0 1
+Z12 OE;L;10.0b;49
+r1
+31
+Z13 !s108 1569559355.023000
+Z14 !s107 ..\TB\arbiter_tb.v|..\RTL\arbiter.v|
+Z15 !s90 -coveropt|3|+cover|+acc|..\RTL\arbiter.v|..\TB\arbiter_tb.v|
+Z16 !s102 -coveropt 3 +cover
+Z17 o-coveropt 3 +cover +acc -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -nocovercells
+Z18 !s100 ZAL^iR2aDEdgOIObeK:>^3
+!s85 0
+varbiter_tb
+Z19 IzlWzdHg`V1I53bMLl:mW20
+Z20 V3A1bMbBDS;93hMeNVSkA@3
+R6
+Z21 w1569559335
+Z22 8..\TB\arbiter_tb.v
+Z23 F..\TB\arbiter_tb.v
+L0 1
+R12
+r1
+31
+R13
+R14
+R15
+R16
+R17
+Z24 !s100 2=08QPF7K^==Qb6L6AlBM1
+!s85 0

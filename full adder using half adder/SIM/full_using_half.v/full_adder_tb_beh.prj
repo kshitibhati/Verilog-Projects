@@ -1,0 +1,4 @@
+verilog work "../../../HALF ADDER/RTB/half_adder_rti.v"
+verilog work "../../RTL/full_half_rtl.v"
+verilog work "../../TB/fulladder_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

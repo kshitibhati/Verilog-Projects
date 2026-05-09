@@ -1,0 +1,50 @@
+//RAM 16x8
+`define ADDR_WIDTH 16
+`define DATA_WIDTH 8
+module ram_tb ();
+reg clk,rst;
+
+//write
+reg  wr_enb;
+reg [`ADDR_WIDTH-1:0] wr_addr;
+reg [`DATA_WIDTH-1:0] wr_data;
+
+//read
+reg  rd_enb;
+reg  [`ADDR_WIDTH-1:0] rd_addr;
+wire [`DATA_WIDTH-1:0] rd_data;
+
+ram xiti (.clk(clk),.wr_addr(wr_addr),.wr_data(wr_data),.rst(rst),.wr_enb(wr_enb),.rd_enb(rd_enb),.rd_addr(rd_addr),.rd_data(rd_data));
+
+//task reset
+task reset()
+begin	
+@ (negedge clk);
+  reset = 1'b1;
+@ (negedge clk);
+  reset = 1'b0;
+end
+endtask
+
+//task write
+task write (input [(`ADDR_WIDTH/4)-1:0] write_addr, input [`DATA_WIDTH-1:0] write_data);
+begin	
+@ (negedge clk);
+reset = 1'b0;
+wr_enb = 1'b1;
+wr_addr = write_addr;
+wr_dara = write_data;
+end
+endtask
+
+//task read
+task read ([`ADDR_WIDTH/4)-1:0] read_addr)
+begin	
+rst = 1'b0;
+rd_enb 1'b1;
+rd_addr = read_addr;
+end
+endtask
+
+
+

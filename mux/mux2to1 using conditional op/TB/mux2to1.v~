@@ -1,0 +1,16 @@
+module mux2to1_tb ();
+reg  a;
+reg sel;
+wire f; 
+
+mux2to1 xiti (.a(a),.sel(sel),.f(f));
+
+
+initial
+begin
+sel = 1'b0; a = 0;  #10;
+sel = 1'b1;  #10;
+$finish;
+end
+
+endmodule

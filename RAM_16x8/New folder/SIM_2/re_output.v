@@ -1,0 +1,11 @@
+rd_addr =  x, rd_data =   x 
+rd_addr = 14, rd_data =   x 
+rd_addr = 14, rd_data =   0 
+rd_addr = 13, rd_data =   0 
+rd_addr = 11, rd_data =   0 
+rd_addr =  0, rd_data =   0 
+rd_addr =  1, rd_data =   0 
+rd_addr =  2, rd_data =   0 
+rd_addr =  3, rd_data =   0 
+rd_addr =  4, rd_data =   0 
+rd_addr =  5, rd_data =   0 

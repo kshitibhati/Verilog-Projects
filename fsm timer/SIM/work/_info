@@ -1,0 +1,49 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Verilog\fsm timer\SIM
+T_opt
+V@ch2JSUoPGcS?LkY`bGnn2
+Z1 04 18 4 work vending_machine_tb fast 0
+Z2 =1-c85b76dab691-5d78d00c-1d4-3b18
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 n@_opt
+Z5 OE;O;10.0b;49
+Z6 dD:\Verilog\fsm timer\SIM
+vvending_machine
+Z7 ImC7dR7ORE6FLXWbQ_J?Me2
+Z8 VHgLbKDIKK1XEgQQ^^Ul0f3
+R6
+Z9 w1568008912
+Z10 8..\RTL\fsm.v
+Z11 F..\RTL\fsm.v
+L0 2
+Z12 OE;L;10.0b;49
+r1
+31
+Z13 !s108 1568198654.148000
+Z14 !s107 ..\TB\fsm_tb.v|..\RTL\fsm.v|
+Z15 !s90 -coveropt|3|+cover|+acc|..\RTL\fsm.v|..\TB\fsm_tb.v|
+Z16 !s102 -coveropt 3 +cover
+Z17 o-coveropt 3 +cover +acc -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -nocovercells
+Z18 !s100 `34:VzCR1]7WA;8b1B`KO0
+!s85 0
+vvending_machine_tb
+Z19 I9>DmeDP^`ZnG@:=?V?TL20
+Z20 VVa]^MU0gCTTA=S5kzU_bi2
+R6
+Z21 w1568198424
+Z22 8..\TB\fsm_tb.v
+Z23 F..\TB\fsm_tb.v
+L0 1
+R12
+r1
+31
+R13
+R14
+R15
+R16
+R17
+Z24 !s100 L@7iYQ63JdZW>F2^G[fDD2
+!s85 0

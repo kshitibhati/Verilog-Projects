@@ -1,0 +1,19 @@
+module dff_tb();
+reg d,clk,reset;
+wire q;
+
+dff xiti (.d(d),.clk(clk),.reset(reset),.q(q));
+initial
+begin
+clk = 0
+forever #10 clk=~clk;
+end
+
+
+initial begin
+d = 1'b0; #10
+d = 1'b1;#10
+$finish
+end
+
+endmodule

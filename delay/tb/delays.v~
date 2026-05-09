@@ -1,0 +1,40 @@
+
+module delays();
+
+reg a,b,c,d,e,f;
+
+reg [2:0] x;
+
+//additive nature of regular & Intra delay
+initial begin
+ a = 1'b1;
+ b = #5 1'b0;             //temp =  1'b0; #5 b = temp;
+ c <= #10 1'b1;
+ #15;
+ d = 1'b1;
+ a = #10 1'b0;
+ #20;
+ e = 1'b0;
+ b = 1'b1;
+ f <= #10 1'b1;
+ #20;
+end
+
+//intra assignment delay effect
+initial begin
+x = 0;
+#5;
+x <= #10 3'd6;
+x = 3'd7; #10 $finish;
+end
+
+initial begin
+#10;
+x = 3'd3;
+//x <= #20 3'd3;
+
+#15 $finish;
+end
+
+endmodule
+ 

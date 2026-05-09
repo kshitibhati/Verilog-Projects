@@ -1,0 +1,11 @@
+module mux4to1_2to1( i0,i1,i2,i3,s0,s1,f);
+
+input i0,i1,i2,i3,s0,s1;
+output f;
+wire x,y;
+
+mux2to1 m1 (.a(a),.b(b),.s0(s0),.x(x));
+mux2to1 m2 (.a(c),.b(d),.s0(s0),.y(y));
+mux2to1 m3 (.a(x),.b(y),.s1(s1),.f(f));
+
+endmodule

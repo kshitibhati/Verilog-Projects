@@ -1,0 +1,2 @@
+verilog work "../../RTL/bidirectional.v"
+verilog work "../../TB/bidirectional.v"

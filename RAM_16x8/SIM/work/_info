@@ -1,0 +1,39 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Verilog\RAM_16x8\SIM
+vram
+V@ML:S;@nBPIlo?^0]XzRk0
+r1
+!s85 0
+31
+IlD23bAQhECVcMXEfIaMH`2
+Z1 dD:\Verilog\RAM_16x8\SIM
+w1566806892
+8..\RTL\ram_16x8.V
+F..\RTL\ram_16x8.V
+L0 7
+Z2 OE;L;10.0b;49
+Z3 !s108 1567745845.818000
+Z4 !s107 ..\TB\ram_tb.v|..\RTL\ram_16x8.V|
+Z5 !s90 ..\RTL\ram_16x8.V|..\TB\ram_tb.v|
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 IJMW;BW>nBzeE1`9LMDDM3
+vram_tb
+VBSF=;MgGho?3T<XIclQg]2
+r1
+31
+I1aJc<Y=^B?3N]5b9IjJlk1
+R1
+w1567073992
+8..\TB\ram_tb.v
+F..\TB\ram_tb.v
+L0 5
+R2
+R3
+R4
+R5
+R6
+!s85 0
+!s100 W=:G[16VbI`;jBg2mN<M80

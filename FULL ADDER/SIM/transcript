@@ -1,0 +1,20 @@
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt full_adder_tb 
+# Loading work.full_adder_tb
+# Loading work.full_adder
+#  
+add wave -r /*
+run -all
+# ** Note: $finish    : ../TB/fulladder_tb.v(23)
+#    Time: 80 ns  Iteration: 0  Instance: /full_adder_tb
+# 1
+# Break in Module full_adder_tb at ../TB/fulladder_tb.v line 23

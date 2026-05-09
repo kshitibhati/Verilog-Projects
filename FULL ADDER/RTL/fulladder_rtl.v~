@@ -1,0 +1,10 @@
+module full_adder (a,b,c_in,sum,carry);
+input a,b,c_in;
+output sum,carry;
+inout w1,w2,w3;
+xor 1(w1,a,b);
+xor 2(sum,w1,c_in);
+and 1(w2,w1,c_1n);
+and 2(w3,a,b);
+or cr(carry,w2,w3);
+endmodul

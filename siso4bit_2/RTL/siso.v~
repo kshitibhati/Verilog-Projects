@@ -1,0 +1,30 @@
+module bit4_siso( clk, reset, d_in, d_out); 
+
+input clk, d_in, reset;
+output reg d_out;
+reg [3:0] tmp_a;
+
+task siso (input clk,input reset ,input d_in, output d_out)
+always @(posedge clk )
+begin
+if (reset)
+tmp_a <= 4’b0;
+else
+begin
+tmp_a <= tmp_a << 1;
+tmp_a[0] <= d_in;
+d_out = tmp_a[3];
+
+end
+end 
+endtask
+always @ (posedge clk)
+begin
+siso = (d_in,d_out);
+end
+endmodule
+
+
+
+
+

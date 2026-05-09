@@ -1,0 +1,45 @@
+module vending_machine_tb ( );
+//Port_direction
+ reg clk,rstn;
+ reg [1:0] coin;
+ wire pr,ch;
+
+vending_machine xiti (.clk(clk),.rstn(rstn),.coin(coin),.pr(pr),.ch(ch));
+
+initial
+begin
+clk=1;
+forever
+#10 clk=!clk;
+end
+
+
+initial
+begin
+rstn = 1;
+@(negedge clk);
+rstn = 0;
+coin=0;
+@(negedge clk);
+coin=1;
+repeat(3)
+coin=0;
+@(negedge clk);
+coin = 2'b10;
+repeat(3)
+coin = 0;
+@(negedge clk);
+coin =2'b01;
+repeat (2)
+coin = 0;
+@(negedge clk);
+coin = 2'b10;
+coin = 0;
+@(negedge clk);
+coin = 0;
+$finish;
+end
+endmodule
+
+
+ 

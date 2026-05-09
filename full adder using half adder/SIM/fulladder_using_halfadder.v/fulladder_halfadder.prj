@@ -1,0 +1,2 @@
+verilog work "../../RTL/ful_using_half rtl.v"
+verilog work "../../TB/full_half tb.v"

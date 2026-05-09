@@ -1,0 +1,3 @@
+module hf_ad_tb ()
+reg x,y;
+wire sum,carry;

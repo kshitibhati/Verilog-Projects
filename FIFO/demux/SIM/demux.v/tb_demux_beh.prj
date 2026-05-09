@@ -1,0 +1,4 @@
+verilog work "../../counter.v"
+verilog work "../../RTL/dmuc.v"
+verilog work "../../TB/dmux_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

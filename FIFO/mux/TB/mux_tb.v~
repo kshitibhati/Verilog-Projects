@@ -1,0 +1,27 @@
+module mux_tb ();
+reg [3:0] e,f,g,h;
+reg reset,rd_enb,clk;
+reg [1:0] rd_sel;
+wire [3:0] rd_data;
+
+mux xiti (.e(e),.f(f),.g(g),.h(h),.reset(reset),.rd_enb(rd_enb),.rd_sel(rd_sel),.rd_data(rd_data),.clk(clk));
+
+initial
+begin
+clk=0;
+forever
+#5 clk =!clk;
+end
+
+initial
+begin
+  reset = 1; rd_enb = 0;#5;
+  reset = 0; rd_enb = 1;#5;
+  e=4'b0010;
+  reset = 0; rd_enb = 1;#5;
+  rd_enb = 0;
+  $finish;
+end
+
+endmodule
+

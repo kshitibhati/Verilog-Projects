@@ -1,0 +1,29 @@
+/*module counter (wr_enb,reset, clk,x);
+input reset,clk,wr_enb;
+output reg [1:0] x;
+
+always @ (posedge clk)
+begin
+  if (reset)
+   x <= 0;
+
+else if ( wr_enb == 1 ) begin
+   x <= x +1; end
+else if (x == 3) begin
+      x <= 0; end
+		
+end
+endmodule*/
+
+module counter  (clk,reset,wr_enb,x);
+output reg[1:0] x;
+input clk,reset,wr_enb;
+
+always @ (posedge clk)
+begin
+if (reset == 1 && wr_enb == 0)
+   x = 2'b00;
+else 
+ x = x + 1;
+end
+endmodule

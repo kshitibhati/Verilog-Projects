@@ -1,0 +1,116 @@
+
+`define ADDR_WIDTH 16
+`define DATA_WIDTH 8
+
+module ram_tb(); 
+
+  reg clk,rst;
+ 
+ //write signals
+  reg wr_enb;
+  reg [(`ADDR_WIDTH/4)-1:0] wr_addr;
+  reg [`DATA_WIDTH-1:0] wr_data;
+
+ //read signals
+  reg rd_enb;
+  reg [(`ADDR_WIDTH/4)-1:0] rd_addr;
+  wire [`DATA_WIDTH-1:0] rd_data;
+
+integer wr,wr_out,rd,rd_out;
+  
+  //DUT Intantiation
+  ram DUT (clk,rst,wr_enb,wr_addr,wr_data,rd_enb,rd_addr,rd_data);
+  
+//reference model
+  reg [`DATA_WIDTH-1:0] rm [0:`ADDR_WIDTH-1];
+
+//clk
+initial
+begin
+clk = 0;
+forever
+#5 clk = !clk;
+end
+
+//rst
+@(negedge clk);
+rst = 1;
+@(negedge clk);
+rst = 0;
+@(negedge clk);
+
+initial
+begin
+$readrmb("",rm);
+wr_out = $fopen ("");
+
+wr_addr = rm[0];
+wr_data = rm[1];
+#10;
+wr_addr = rm[2];
+wr_data = rm[3];
+#10;
+wr_addr = rm[4];
+wr_data = rm[5];
+#10;
+wr_addr = rm[6];
+wr_data = rm[7];
+#10;
+wr_addr = rm[8];
+wr_data = rm[9];
+#10;
+wr_addr = rm[10];
+wr_data = rm[11];
+#10;
+wr_addr = rm[12];
+wr_data = rm[13];
+#10;
+wr_addr = rm[14];
+wr_data = rm[15];
+#10;
+$fclose(wr_out);
+#10;
+$finish
+end
+
+initial
+begin
+$readrmd("",rm);
+rd_out = $fopen("");
+
+rd_addr = rm[0];
+rd_data = rm[1];
+#10;
+rd_addr = rm[2];
+rd_data = rm[3];
+#10;
+rd_addr = rm[4];
+rd_data = rm[5];
+#10;
+rd_addr = rm[6];
+rd_data = rm[7];
+#10;
+rd_addr = rm[8];
+rd_data = rm[9];
+#10;
+rd_addr = rm[10];
+rd_data = rm[11];
+#10;
+rd_addr = rm[12];
+rd_data = rm[13];
+#10;
+rd_addr = rm[14];
+rd_data = rm[15];
+#10;
+$fclose(rd_out);
+#10;
+$finish
+end
+
+initial
+begin
+$fmonitor(wr_out,"wr_addr = %d, wr_data = %d",wr_addr,wr_data);
+$fmonitor(rd_out,"rd_addr = %d, rd_data = %d",rd_addr,rd_dara);
+end
+
+endmodule

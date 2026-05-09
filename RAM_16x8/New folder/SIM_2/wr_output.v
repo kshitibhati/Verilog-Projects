@@ -1,0 +1,9 @@
+wr_addr =  x, wr_data =   x
+wr_addr = 14, wr_data = 253
+wr_addr =  7, wr_data = 251
+wr_addr =  0, wr_data = 129
+wr_addr =  2, wr_data = 131
+wr_addr =  4, wr_data = 133
+wr_addr =  6, wr_data = 135
+wr_addr =  8, wr_data = 137
+wr_addr = 10, wr_data = 139

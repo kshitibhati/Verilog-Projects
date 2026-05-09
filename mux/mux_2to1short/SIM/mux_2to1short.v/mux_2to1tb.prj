@@ -1,0 +1,2 @@
+verilog work "../../RTL/mux2to1_short.v"
+verilog work "../../TB/mux_2to1tb.v"

@@ -1,0 +1,39 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Verilog\digital clock\SIM
+vdigital_clk
+VS87Y4RO]Zoh7dEF=5fal`2
+r1
+!s85 0
+31
+IJm7^@?<7;];Ih?XkMLE>^0
+Z1 dD:\Verilog\digital clock\SIM
+w1566380930
+8..\RTL\digital_clk.v
+F..\RTL\digital_clk.v
+L0 1
+Z2 OE;L;10.0b;49
+Z3 !s108 1568019558.364000
+Z4 !s107 ..\TB\digital_clk_tb.v|..\RTL\digital_clk.v|
+Z5 !s90 ..\RTL\digital_clk.v|..\TB\digital_clk_tb.v|
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 NN<j8;^]kURCCA>D[2[2c0
+vdigital_clk_tb
+V0e`g@F]c^78[Ge5;?PJCZ3
+r1
+31
+Ii9b7le7cc_Y3lZD;Q8l1I3
+R1
+w1566361728
+8..\TB\digital_clk_tb.v
+F..\TB\digital_clk_tb.v
+L0 1
+R2
+R3
+R4
+R5
+R6
+!s85 0
+!s100 11CjaNH;bcj8Ca8Y5fhL;0

@@ -1,0 +1,2 @@
+verilog work "../../RTL/8to3_encoder_pri.v"
+verilog work "../../TB/encoder_8to3.v"

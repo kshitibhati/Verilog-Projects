@@ -1,0 +1,3 @@
+verilog isim_temp "../../RTL/dff_rtl.v"
+verilog isim_temp "../../TB/dff_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

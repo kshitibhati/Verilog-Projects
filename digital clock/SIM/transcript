@@ -1,0 +1,19 @@
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt digital_clk_tb 
+# Loading work.digital_clk_tb
+# Loading work.digital_clk
+#  
+add wave -r /*
+run -all
+add wave -r sim:/digital_clk_tb/*
+# Break key hit 
+# Break in Module digital_clk_tb at ../TB/digital_clk_tb.v line 20

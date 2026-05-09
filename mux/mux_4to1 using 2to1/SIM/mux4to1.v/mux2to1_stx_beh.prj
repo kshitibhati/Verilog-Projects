@@ -1,0 +1,2 @@
+verilog isim_temp "../../../mux_2to1/RTL/mux_2to1_rtl2.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

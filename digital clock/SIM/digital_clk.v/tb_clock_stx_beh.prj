@@ -1,0 +1,3 @@
+verilog isim_temp "../../RTL/digital_clk.v"
+verilog isim_temp "../../TB/digital_clk_tb.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

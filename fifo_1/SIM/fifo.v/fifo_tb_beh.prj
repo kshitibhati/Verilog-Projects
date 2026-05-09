@@ -1,0 +1,3 @@
+verilog work "../../RTL/fifo.v"
+verilog work "../../TB/fifo_tb.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,22 @@
+# //  Questa Sim
+# //  Version 10.0b win32 May  5 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -novopt half_adder_tb 
+# Refreshing D:\Verilog\HALF ADDER\SIM\work.half_adder_tb
+# Loading work.half_adder_tb
+# Refreshing D:\Verilog\HALF ADDER\SIM\work.half_adder
+# Loading work.half_adder
+#  
+add wave -r /*
+run -all
+# ** Note: $finish    : ../TB/haldadder_tb.v(15)
+#    Time: 40 ns  Iteration: 0  Instance: /half_adder_tb
+# 1
+# Break in Module half_adder_tb at ../TB/haldadder_tb.v line 15

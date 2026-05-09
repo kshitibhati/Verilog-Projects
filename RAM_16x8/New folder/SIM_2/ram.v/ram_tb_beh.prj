@@ -1,0 +1,3 @@
+verilog work "../../RTL_2/ram_16x8.V"
+verilog work "../../TB_2/ram_tb_fileop.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
