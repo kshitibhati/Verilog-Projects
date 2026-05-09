@@ -1,98 +1,60 @@
-# Xilinx ISE / ISim generated files
+# =====================================================
+# Backup / temporary files
+# =====================================================
 
+*.v~
+*.un~
+*.log
 
-# Xilinx ISE / ISim generated files
+# =====================================================
+# Xilinx ISE / ISim generated folders
+# =====================================================
 
 isim/
 xst/
-_ngc/
+_ngo/
 _xmsgs/
 iseconfig/
 xlnx_auto_0_xdb/
 
+# =====================================================
+# Xilinx generated project/report/output files
+# =====================================================
+
 *.bld
-*.cmd_log
-*.lso
-*.ngc
-*.ngd
-*.ngr
-*.stx
-*.syr
-*.xrpt
-*.xst
-*.html
-*.map
-*.mrp
-*.pad
-*.par
-*.ptwx
-*.twx
-*.unroutes
-*.xml
-*.log
 *.bit
-*.ncd
-*.pcf
-*.bld
-*.cmd_log
-*.lso
-*.ngc
-*.ngd
-*.ngr
-*.stx
-*.syr
-*.xrpt
-*.xst
-*.html
-*.map
-*.mrp
-*.pad
-*.par
-*.ptwx
-*.twx
-*.unroutes
-*.xml
-*.log
-*.bit
-*.ncd
-*.pcf
-isim/
-_ngo/
-*.exe
-*.wdb
-*.ngm
 *.cmd
-*.ini
+*.cmd_log
+*.drc
+*.exe
 *.gise
-*.xrpt
-*.syr
-*.stx
-*.ngc
-*.ngd
-*.ngr
-*.lso
-*.cmd_log
-*.bld
-*.v~
-*.un~
-
-# Xilinx generated files
-*.xise
-*.xrpt
-*.cmd
-*.wdb
-*.exe
-*.ngc
-*.ngr
-*.ngd
-*.xmsgs
 *.html
-*.js
-*.css
+*.ini
+*.lso
+*.map
+*.mrp
+*.ncd
+*.ngc
+*.ngd
+*.ngm
+*.ngr
+*.pad
+*.par
+*.pcf
+*.ptwx
+*.stx
+*.syr
+*.twx
+*.unroutes
+*.wdb
 *.xml
+*.xrpt
+*.xise
+*.xmsgs
 
-# Generated folders
-_ngo/
-isim/
-xst/
-_xmsgs/
+# =====================================================
+# Auto-generated summary/environment files
+# =====================================================
+
+*_summary
+*_envsettings
