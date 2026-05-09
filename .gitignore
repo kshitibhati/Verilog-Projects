@@ -72,5 +72,27 @@ _ngo/
 *.ngr
 *.lso
 *.cmd_log
-*.bld*.v~
+*.bld
+*.v~
 *.un~
+
+# Xilinx generated files
+*.xise
+*.xrpt
+*.cmd
+*.wdb
+*.exe
+*.ngc
+*.ngr
+*.ngd
+*.xmsgs
+*.html
+*.js
+*.css
+*.xml
+
+# Generated folders
+_ngo/
+isim/
+xst/
+_xmsgs/
