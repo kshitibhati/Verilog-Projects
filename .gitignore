@@ -57,4 +57,21 @@ xlnx_auto_0_xdb/
 # =====================================================
 
 *_summary
-*_envsettings
+*_envsettings# Web/report files
+*.html
+*.css
+*.js
+
+# Xilinx reports
+*.xrpt
+*.xreport
+*.xml
+*.log
+*.jou
+*.str
+
+# Simulation folders
+work/
+isim/
+xst/
+_xmsgs/
